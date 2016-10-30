@@ -28,6 +28,7 @@ local-remove-apps   := Gallery2 Exchange2
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
 local-density := XHDPI
+local-target-bit := 32
 
 PORT_PRODUCT := ghost
 

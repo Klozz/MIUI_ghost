@@ -34,6 +34,8 @@ ro.wifi.channels=
 ro.board.platform=msm8960
 ro.build.characteristics=default
 ro.xpe.device=ghost
+ro.product.device=ghost
+ro.build.fingerprint="motorola/ghost_retail/ghost:5.1/LPA23.12-15.5/4:user/release-keys"
 # end build properties
 
 #
