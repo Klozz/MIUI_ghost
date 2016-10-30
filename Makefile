@@ -30,8 +30,6 @@ local-remove-apps   := Gallery3 Exchange2
 local-density := XHDPI
 local-target-bit := 32
 
-PORT_PRODUCT := ghost
-
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
 # (1) be defined after including porting.mk if using any global variable(see porting.mk)
@@ -46,24 +44,3 @@ PORT_PRODUCT := ghost
 
 include $(PORT_BUILD)/porting.mk
 
-local-pre-zip-misc:
-	@echo Update boot.img
-	cp other/boot.img $(ZIP_DIR)/boot.img
-	
-	@echo Update build.prop
-	cp other/build.prop $(ZIP_DIR)/system/build.prop
-
-	@echo Delete some unneeded files
-	rm -rf $(ZIP_DIR)/system/etc/.has_su_daemon
-
-	rm -rf $(ZIP_DIR)/system/priv-app/Dialer.apk
-
-	rm -rf $(ZIP_DIR)/system/priv-app/Keyguard.apk
-
-	rm -rf $(ZIP_DIR)/system/priv-app/SystemUI.apk
-
-	rm -rf $(ZIP_DIR)/system/priv-app/VoiceDialer.apk
-
-	rm -rf $(ZIP_DIR)/system/priv-app/Launcher3.apk
-
-	rm -rf $(ZIP_DIR)/system/priv-app/XPerienceCenter.apk
