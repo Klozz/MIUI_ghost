@@ -1,0 +1,13 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: org.cyanogenmod.platform.jar
+compressionType: false
+doNotCompress:
+- dex
+isFrameworkApk: false
+packageInfo: null
+sdkInfo: null
+sharedLibrary: false
+unknownFiles: {}
+usesFramework: null
+version: 2.2.1
+versionInfo: null
