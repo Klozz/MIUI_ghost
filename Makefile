@@ -15,8 +15,7 @@ local-modified-apps :=
 
 local-modified-priv-apps := 
 
-local-modified-jars := 
-
+local-modified-jars := org.cyanogenmod.platform 
 # All apks from MIUI
 local-miui-removed-apps := GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo SogouInput SystemAdSolution XMPass
 
