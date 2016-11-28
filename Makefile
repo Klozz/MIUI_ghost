@@ -42,7 +42,7 @@ local-after-zip:= local-put-to-phone
 # The local targets after the zip file is generated, could include 'zip2sd' to 
 # deliver the zip file to phone, or to customize other actions
 
-#include phoneapps.mk
+include phoneapps.mk
 
 include $(PORT_BUILD)/porting.mk
 
