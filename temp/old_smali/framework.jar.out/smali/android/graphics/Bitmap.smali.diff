@@ -1,0 +1,19 @@
+*** ./smali/android/graphics/Bitmap.smali	2016-11-28 05:47:38.516984843 +0000
+--- /home/klozz/patchrom/ghost/temp/new_smali/framework.jar.out/./smali/android/graphics/Bitmap.smali	2016-11-28 05:48:46.344919810 +0000
+***************
+*** 41,47 ****
+  
+  
+  # instance fields
+! .field private mBuffer:[B
+  
+  .field mDensity:I
+  
+--- 41,47 ----
+  
+  
+  # instance fields
+! .field public mBuffer:[B
+  
+  .field mDensity:I
+  

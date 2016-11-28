@@ -1,0 +1,59 @@
+assert(getprop("ro.product.device") == "xt1052" || getprop("ro.build.product") == "xt1052" || getprop("ro.product.device") == "ghost" || getprop("ro.build.product") == "ghost" || getprop("ro.product.device") == "xt1053" || getprop("ro.build.product") == "xt1053" || getprop("ro.product.device") == "ghost_retail" || getprop("ro.build.product") == "ghost_retail" || getprop("ro.product.device") == "xt1055" || getprop("ro.build.product") == "xt1055" || getprop("ro.product.device") == "ghost_usc" || getprop("ro.build.product") == "ghost_usc" || getprop("ro.product.device") == "xt1056" || getprop("ro.build.product") == "xt1056" || getprop("ro.product.device") == "ghost_sprint" || getprop("ro.build.product") == "ghost_sprint" || getprop("ro.product.device") == "xt1058" || getprop("ro.build.product") == "xt1058" || getprop("ro.product.device") == "ghost_att" || getprop("ro.build.product") == "ghost_att" || getprop("ro.product.device") == "ghost_rcica" || getprop("ro.build.product") == "ghost_rcica" || getprop("ro.product.device") == "xt1060" || getprop("ro.build.product") == "xt1060" || getprop("ro.product.device") == "ghost_verizon" || getprop("ro.build.product") == "ghost_verizon" || abort("This package is for device: xt1052,ghost,xt1053,ghost_retail,xt1055,ghost_usc,xt1056,ghost_sprint,xt1058,ghost_att,ghost_rcica,xt1060,ghost_verizon; this device is " + getprop("ro.product.device") + "."););
+ui_print("Target: 1477745706");
+ifelse(is_mounted("/system"), unmount("/system"));
+package_extract_dir("install", "/tmp/install");
+set_metadata_recursive("/tmp/install", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
+set_metadata_recursive("/tmp/install/bin", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system", "");
+run_program("/tmp/install/bin/backuptool.sh", "backup");
+unmount("/system");
+if is_mounted("/data") then
+package_extract_file("META-INF/mx/xperience/releasekey", "/tmp/releasekey");
+run_program("/tmp/install/bin/otasigcheck.sh") != "31744" || abort("Can't install this package on top of incompatible data. Please try another package or run a factory reset");
+else
+mount("f2fs", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data", "");
+package_extract_file("META-INF/mx/xperience/releasekey", "/tmp/releasekey");
+run_program("/tmp/install/bin/otasigcheck.sh") != "31744" || abort("Can't install this package on top of incompatible data. Please try another package or run a factory reset");
+unmount("/data");
+endif;
+ui_print("##############################################");
+ui_print("#     ) (       (   (          )             #");
+ui_print("#  ( /( )\ )    )\ ))\ )    ( /(   (         #");
+ui_print("#  )\()|()/((  (()/(()/((   )\())  )\   (    #");
+ui_print("# ((_)\ /(_))\  /(_))(_))\ ((_)\ (((_)_( )\  #");
+ui_print("# (__((_|_))((_)(_))(_))((_) _((_))\___((_)  #");
+ui_print("# \ \/ / _ \ __| _ \_ _| __| \| ((/ __| __|  #");
+ui_print("#  >  <|  _/ _||   /| || _|| .` || (__| _|   #");
+ui_print("# /_/\_\_| |___|_|_\___|___|_|\_| \___|___|  #");
+ui_print("#      (C)2016 The XPerience Project         #");
+ui_print("#              By Klozz Jesus                #");
+ui_print("##############################################");
+ui_print("#   Compiled: Sat Oct 29 12:55:06 UTC 2016   #");
+ui_print("#   Device: ghost (ghost)                     #");
+ui_print("##############################################");
+show_progress(0.750000, 0);
+ui_print("Patching system image unconditionally...");
+block_image_update("/dev/block/platform/msm_sdcc.1/by-name/system", package_extract_file("system.transfer.list"), "system.new.dat", "system.patch.dat");
+ui_print("Verifying the updated system image...");
+if range_sha1("/dev/block/platform/msm_sdcc.1/by-name/system", "42,0,32770,32865,32867,33363,65535,65536,65538,98304,98306,98401,98403,98899,131071,131072,131074,163840,163842,163937,163939,164435,196607,196608,196610,229376,229378,229473,229475,229971,253364,262144,262146,294912,294914,295009,295011,327680,327682,360448,360450,360946,380928") == "00ce6c90be984c66c6a196125f00071231f7458c" then
+if range_sha1("/dev/block/platform/msm_sdcc.1/by-name/system", "54,32770,32865,32867,33363,65535,65536,65538,66050,97792,98304,98306,98401,98403,98899,131071,131072,131074,131586,163328,163840,163842,163937,163939,164435,196607,196608,196610,197122,228864,229376,229378,229473,229475,229971,253364,253876,261632,262144,262146,262658,294400,294912,294914,295009,295011,295523,327168,327680,327682,328194,359936,360448,360450,360946") == "e22eed43ca5fb5ec5d930e80de15342c12a53717" then
+ui_print("Verified the updated system image.");
+else
+  abort("system partition has unexpected non-zero contents after OTA update");
+endif;
+else
+  abort("system partition has unexpected contents after OTA update");
+endif;
+show_progress(0.020000, 10);
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system", "");
+run_program("/tmp/install/bin/backuptool.sh", "restore");
+unmount("/system");
+ui_print("Flashing SuperSU...");
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system", "");
+package_extract_dir("supersu", "/tmp/supersu");
+run_program("/sbin/busybox", "unzip", "/tmp/supersu/supersu.zip", "META-INF/com/google/android/*", "-d", "/tmp/supersu");
+run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/supersu/supersu.zip");
+unmount("/system");
+show_progress(0.050000, 5);
+package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
+show_progress(0.200000, 10);
