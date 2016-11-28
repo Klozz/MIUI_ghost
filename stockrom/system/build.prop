@@ -36,7 +36,10 @@ ro.build.characteristics=default
 ro.xpe.device=ghost
 # end build properties
 
-#e
+#MIUI ADITION
+ro.build.fingerprint=motorola/xpe_ghost/ghost:6.0.1/M4B30X/eng.TeamMEX.20161029.125050:userdebug/test-keys
+
+#
 # ADDITIONAL_BUILD_PROPERTIES
 #
 keyguard.no_require_sim=true
