@@ -3426,24 +3426,11 @@
     return v0
 .end method
 
-.method public static opToDefaultMode(IZ)I
+.method public static opToDefaultMode(I)I
     .locals 1
     .param p0, "op"    # I
-    .param p1, "isStrict"    # Z
 
     .prologue
-    .line 1293
-    if-eqz p1, :cond_0
-
-    .line 1294
-    sget-object v0, Landroid/app/AppOpsManager;->sOpDefaultStrictMode:[I
-
-    aget v0, v0, p0
-
-    return v0
-
-    .line 1295
-    :cond_0
     sget-object v0, Landroid/app/AppOpsManager;->sOpDefaultMode:[I
 
     aget v0, v0, p0
