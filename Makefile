@@ -21,7 +21,7 @@ local-miui-removed-apps := GameCenter MiGameCenterSDKService Mipay MiuiSuperMark
 
 local-miui-removed-priv-apps := 
 
-local-miui-modified-apps := 
+local-miui-modified-apps := TeleService
 
 # All apps need to be removed from original ZIP file
 local-remove-apps   := 
