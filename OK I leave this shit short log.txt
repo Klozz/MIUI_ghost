@@ -1,0 +1,325 @@
+--------- beginning of crash
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-64
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:45:45.562  1726  3377 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:46:01.509  4088  4523 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: Error reporting crash
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:46:01.553  4548  4548 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:46:01.555  4596  4596 E AndroidRuntime: Error reporting crash
+12-05 10:46:01.555  4596  4596 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.res.Configuration android.app.IActivityManager.getConfiguration()' on a null object reference
+12-05 10:46:01.555  4596  4596 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:46:01.555  4596  4596 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:46:01.555  4596  4596 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:46:16.977  5122  5654 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:46:32.432  6314  6764 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:46:47.923  7384  7840 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:46:47.982  7954  7954 E AndroidRuntime: Error reporting crash
+12-05 10:46:47.982  7954  7954 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.res.Configuration android.app.IActivityManager.getConfiguration()' on a null object reference
+12-05 10:46:47.982  7954  7954 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:46:47.982  7954  7954 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:46:47.982  7954  7954 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:47:04.491  8537  9009 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:47:20.110  9637 10157 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: Error reporting crash
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:47:20.277 10174 10174 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:47:36.105 10799 11267 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:47:52.092 11771 12378 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:47:53.456 12613 12613 E AndroidRuntime: Error reporting crash
+12-05 10:47:53.456 12613 12613 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.res.Configuration android.app.IActivityManager.getConfiguration()' on a null object reference
+12-05 10:47:53.456 12613 12613 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:47:53.456 12613 12613 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:47:53.456 12613 12613 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: Error reporting crash
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:47:53.573 12523 12523 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: Error reporting crash
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:47:53.607 12569 12669 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:48:09.218 13288 13733 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:48:25.919 14379 14800 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: Error reporting crash
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:48:26.184 14830 14830 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: Error reporting crash
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:48:26.221 14838 14838 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-63
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:48:42.940 15730 16194 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: Error reporting crash
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:48:42.973 16243 16243 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: Error reporting crash
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:48:43.011 16259 16259 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: Error reporting crash
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: android.os.DeadObjectException
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at android.app.ActivityManagerProxy.getConfiguration(ActivityManagerNative.java:3969)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:48:43.031 16248 16248 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: Thread-64
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: java.lang.IllegalArgumentException: Unknown package: com.xiaomi.market
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at com.android.server.pm.Settings.getApplicationEnabledSettingLPr(Settings.java:4121)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at com.android.server.pm.PackageManagerService.getApplicationEnabledSetting(PackageManagerService.java:15763)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at android.app.ApplicationPackageManager.getApplicationEnabledSetting(ApplicationPackageManager.java:1935)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.checkEnabled(SecurityManagerService.java:584)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at com.miui.server.SecurityManagerService.access$1400(SecurityManagerService.java:74)
+12-05 10:51:10.137 17497 18163 E AndroidRuntime: 	at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:510)
+
+
+
+
+
+
+
+ 289   599 E MDMCTBK : MdmCutbackHndler,Airplane Mode Enabled !! =1
+12-05 10:52:33.653 24587 24587 I android.app.ActivityThreadHook: handleMain
+12-05 10:52:33.667 24595 24595 I android.app.ActivityThreadHook: handleMain
+12-05 10:52:33.684   233   233 I ServiceManager: service 'sensorservice' died
+12-05 10:52:33.684   233   233 I ServiceManager: service 'meminfo' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'gfxinfo' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'dbinfo' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'cpuinfo' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'permission' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'processinfo' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'assetatlas' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'batterymanager' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'usagestats' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'webviewupdate' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'scheduling_policy' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'telephony.registry' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'media.camera.proxy' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'account' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'content' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'user' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'procstats' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'activity' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'vibrator' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'consumer_ir' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'alarm' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'window' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'textservices' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'input' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'package' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'bluetooth_manager' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'input_method' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'accessibility' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'mount' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'uimode' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'lock_settings' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'deviceidle' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'device_policy' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'statusbar' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'clipboard' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'network_management' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'network_score' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'netstats' died
+12-05 10:52:33.685   233   233 I ServiceManager: service 'netpolicy' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'wifip2p' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'wifi' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'wifiscanner' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'rttmanager' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'ethernet' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'connectivity' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'servicediscovery' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'updatelock' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'cmperformance' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'cmthemes' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'graphicsstats' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'notification' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'devicestoragemonitor' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'location' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'country_detector' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'search' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'dropbox' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'wallpaper' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'audio' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'DockObserver' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'usb' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'serial' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'security' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'MiuiInit' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'MiuiBackup' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'locationpolicy' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'whetstone.activity' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'miui.security.keystore' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'print' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'jobscheduler' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'backup' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'appwidget' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'voiceinteraction' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'diskstats' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'samplingprofiler' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'commontime_management' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'dreams' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'restrictions' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'media_session' died
+12-05 10:52:33.686   233   233 I ServiceManager: service 'media_router' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'trust' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'fingerprint' died
+12-05 10:52:33.687 24582 24582 E WebViewFactory: error notifying update service
+12-05 10:52:33.687 24582 24582 E WebViewFactory: android.os.DeadObjectException
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at android.os.BinderProxy.transactNative(Native Method)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at android.webkit.IWebViewUpdateService$Stub$Proxy.notifyRelroCreationCompleted(IWebViewUpdateService.java:98)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at android.webkit.WebViewFactory$RelroFileCreator.main(WebViewFactory.java:491)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at java.lang.reflect.Method.invoke(Native Method)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-05 10:52:33.687 24582 24582 E WebViewFactory: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-05 10:52:33.687   233   233 I ServiceManager: service 'launcherapps' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'edgegestureservice' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'media_projection' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmstatusbar' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmiconcache' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'imms' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmlivelockscreen' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'profile' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmpartnerinterface' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmtelephonymanager' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmhardware' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmappsuggest' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmweather' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'cmlivedisplay' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'batterystats' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'appops' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'power' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'display' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'securespaces' died
+12-05 10:52:33.687   233   233 I ServiceManager: service 'spaceencryption' died
+12-05 10:52:33.687   292   292 E installd: eof
+12-05 10:52:33.687   292   292 E installd: failed to read size
+12-05 10:52:33.687   292   292 I installd: closing connection
+12-05 10:52:33.688 24582 24582 I art     : System.exit called, status: 0
+12-05 10:52:33.688 24582 24582 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+12-05 10:52:33.692 24595 24595 D AndroidRuntime: Shutting down VM
+12-05 10:52:33.692 24595 24595 E AndroidRuntime: Error reporting crash
+12-05 10:52:33.692 24595 24595 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.res.Configuration android.app.IActivityManager.getConfiguration()' on a null object reference
+12-05 10:52:33.692 24595 24595 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:88)
+12-05 10:52:33.692 24595 24595 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+12-05 10:52:33.692 24595 24595 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+12-05 10:52:33.693 24595 24595 I Process : Sending signal. PID: 24595 SIG: 9
