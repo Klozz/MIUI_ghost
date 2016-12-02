@@ -10,25 +10,33 @@ local-zip-file     := stockrom.zip
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
 local-out-zip-file := MIUI8_ghost.zip
 
+# The location for local-ota to save target-file
+local-previous-target-dir :=
+
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps :=
 
 local-modified-priv-apps := 
 
 local-modified-jars := org.cyanogenmod.platform 
+
 # All apks from MIUI
 local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution WebViewGoogle XiaomiVip XMPass
 
-local-miui-removed-priv-apps := 
-
 local-miui-modified-apps := TeleService
-
-# All apps need to be removed from original ZIP file
-local-remove-apps   := 
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
 local-density := XHDPI
+
+# All apps need to be removed from original ZIP file
+local-remove-apps   := 
+
+include phoneapps.mk
+
+# The certificate for release version
+local-certificate-dir := security
+
 local-target-bit := 32
 
 # To include the local targets before and after zip the final ZIP file, 
@@ -41,10 +49,12 @@ local-after-zip:= local-put-to-phone
 # The local targets after the zip file is generated, could include 'zip2sd' to 
 # deliver the zip file to phone, or to customize other actions
 
-include phoneapps.mk
-
 include $(PORT_BUILD)/porting.mk
 
+# To define any local-target
+#updater := $(ZIP_DIR)/META-INF/com/google/android/updater-script
+#pre_install_data_packages := $(TMP_DIR)/pre_install_apk_pkgname.txt
+local-pre-zip-misc:
 local-pre-zip-misc:
 	@echo copying files!
 	cp -rf misc/system $(ZIP_DIR)/

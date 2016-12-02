@@ -34,6 +34,7 @@ ro.wifi.channels=
 ro.board.platform=msm8960
 ro.build.characteristics=default
 ro.xpe.device=ghost
+ro.product.device=ghost
 # end build properties
 
 #MIUI ADITION
